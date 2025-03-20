@@ -1,0 +1,235 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    min-height: 100vh;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 96px;
+    height: 80px;
+    border-radius: 16px;
+    background-color: #d9d9d9;
+  }
+  
+  .logo {
+    color: #1d3557;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+  
+  .main-nav {
+    display: flex;
+    gap: 23px;
+  }
+  
+  .nav-link {
+    color: #1d3557;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    color: #f8f9fa;
+    padding: 0 14px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: #1d3557;
+    border: none;
+  }
+  
+  /* Main content styles */
+  .main-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  
+  .registration-container {
+    width: 635px;
+    border-radius: 16px;
+    padding: 21px 42px;
+    background-color: #d9d9d9;
+  }
+  
+  .form-title {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .form-field {
+    margin-bottom: 8px;
+  }
+  
+  .form-input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 16px;
+    padding: 0 8px;
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #b4b4b4;
+    box-sizing: border-box;
+  }
+  
+  .select-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  
+  .select-row {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 13px;
+  }
+  
+  .select-btn {
+    width: 165px;
+    height: 34px;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #b4b4b4;
+    border: none;
+  }
+  
+  .terms-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+  }
+  
+  .terms-checkbox {
+    width: 16px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background: transparent;
+  }
+  
+  .info-text {
+    margin: 20px 0;
+    font-style: italic;
+    font-size: 20px;
+  }
+  
+  .highlight {
+    color: #1d3557;
+  }
+  
+  .submit-btn {
+    width: 241px;
+    height: 60px;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 16px;
+    font-size: 32px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    background-color: #1d3557;
+  }
+  
+  /* Footer styles */
+  .footer {
+    padding: 40px 96px;
+    border-radius: 16px;
+    margin-top: 40px;
+    background-color: #1d3557;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1248px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    color: #fff;
+  }
+  
+  .footer-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+  
+  .footer-description {
+    font-size: 20px;
+    max-width: 426px;
+    margin-top: 8px;
+  }
+  
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 17px;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .header {
+      padding: 0 20px;
+    }
+  
+    .main-nav {
+      display: none;
+    }
+  
+    .footer {
+      padding: 40px 20px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .registration-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .form-input {
+      font-size: 24px;
+    }
+  
+    .submit-btn {
+      font-size: 24px;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  

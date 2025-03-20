@@ -1,0 +1,356 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    border-radius: 16px;
+    background-color: #d9d9d9;
+  }
+  
+  .brand-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1d3557;
+    margin: 0;
+  }
+  
+  .nav-profile .profile-text {
+    color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 5px 20px;
+    border-radius: 12px;
+    background-color: #1d3557;
+    display: inline-block;
+  }
+  
+  /* Main content styles */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px 0;
+  }
+  
+  .page-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #1d3557;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  /* Form styles */
+  .blood-request-form {
+    width: 100%;
+    max-width: 635px;
+    margin: 0 auto;
+  }
+  
+  .form-section {
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #d9d9d9;
+  }
+  
+  .section-title {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-input {
+    width: 100%;
+    height: 122px;
+    border: none;
+    border-radius: 16px;
+    padding: 0 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #b4b4b4;
+  }
+  
+  .form-input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Checkbox groups */
+  .emergency-group,
+  .confirm-group {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .emergency-label {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #000;
+    margin-right: 20px;
+  }
+  
+  .checkbox-input {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .confirm-label {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #000;
+    margin-left: 10px;
+  }
+  
+  /* Final confirmation section */
+  .final-confirmation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+  
+  .confirmation-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    color: #000;
+    margin-right: 20px;
+    flex: 1;
+  }
+  
+  /* Submit button */
+  .submit-button {
+    display: block;
+    width: auto;
+    min-width: 200px;
+    color: #d9d9d9;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+    background-color: #1d3557;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #152942;
+  }
+  
+  /* Footer styles */
+  .main-footer {
+    padding: 40px;
+    color: #fff;
+    background-color: #1d3557;
+  }
+  
+  .footer-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-info {
+    flex: 1;
+  }
+  
+  .footer-brand {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+  }
+  
+  .footer-description {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    width: 492px;
+    margin: 0;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 100px;
+  }
+  
+  .quick-links,
+  .support-links {
+    margin-right: 50px;
+  }
+  
+  .footer-title {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .footer-link {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .blood-request-form {
+      width: 90%;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .footer-description {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .top-header {
+      padding: 0 10px;
+    }
+  
+    .brand-name,
+    .nav-profile .profile-text {
+      font-size: 20px;
+    }
+  
+    .page-title {
+      font-size: 32px;
+    }
+  
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .form-input {
+      height: 80px;
+      font-size: 24px;
+    }
+  
+    .emergency-label {
+      font-size: 20px;
+    }
+  
+    .confirmation-text {
+      font-size: 20px;
+    }
+  
+    .submit-button {
+      width: 90%;
+      font-size: 24px;
+      padding: 15px;
+    }
+  
+    .main-footer {
+      padding: 20px;
+    }
+  
+    .footer-brand {
+      font-size: 24px;
+    }
+  
+    .footer-title {
+      font-size: 24px;
+    }
+  
+    .footer-link {
+      font-size: 16px;
+    }
+  
+    .final-confirmation {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  }
+  
+  /* Focus states for accessibility */
+  .form-input:focus,
+  .checkbox-input:focus,
+  .submit-button:focus,
+  .footer-link:focus {
+    outline: 3px solid #4a90e2;
+    outline-offset: 2px;
+  }
+  
+  /* Custom checkbox styles */
+  .checkbox-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #b4b4b4;
+    border: 2px solid #000;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .checkbox-input:checked {
+    background-color: #1d3557;
+    border-color: #1d3557;
+  }
+  
+  .checkbox-input:checked::after {
+    content: "✓";
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
