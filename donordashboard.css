@@ -41,7 +41,7 @@ body {
 
 .profile-title {
   color: #f8f9fa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Crimson Text", serif;
   font-size: 28px;
   font-weight: 700;
   padding: 5px 20px;
@@ -176,7 +176,7 @@ body {
 
 .inbox-title {
   color: #1d3557;
-  font-family: "Poppins", sans-serif;
+  font-family: "Crimson Text", serif;
   font-size: 20px;
   font-weight: 700;
   text-align: center;
@@ -196,63 +196,10 @@ body {
 .user-item {
   padding: 10px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Crimson Text", serif;
   font-size: 20px;
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* Footer styles */
-.main-footer {
-  padding: 40px 100px;
-  color: #fff;
-  background-color: #1d3557;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.company-info,
-.quick-links,
-.support-links {
-  max-width: 300px;
-}
-
-.footer-logo {
-  margin-bottom: 20px;
-}
-
-.company-description {
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 600;
-}
-
-.footer-heading {
-  font-size: 28px;
-  font-style: italic;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.footer-link {
-  display: block;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  text-decoration: underline;
-  outline: none;
 }
 
 /* Accessibility focus styles */
@@ -288,14 +235,5 @@ button:focus {
 
   .main-content {
     padding: 10px;
-  }
-
-  .main-footer {
-    padding: 20px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    gap: 30px;
   }
 }
