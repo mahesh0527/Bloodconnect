@@ -1,425 +1,301 @@
 /* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family:
-      Poppins,
-      -apple-system,
-      Roboto,
-      Helvetica,
-      sans-serif;
-    background-color: rgba(255, 255, 255, 1);
-    padding-top: 16px;
+  font-family: "Crimson Text", serif;
+  background-color: #fff;
+}
+
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+/* Header styles */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 80px;
+  background-color: #d9d9d9;
+}
+
+.logo-container {
+  width: 250px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 157px;
+  height: 36px;
+}
+
+.profile-title {
+  color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 5px 20px;
+  border-radius: 12px;
+  background-color: #1d3557;
+}
+
+/* Main content styles */
+.main-content {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  flex: 1;
+}
+
+/* Card styles */
+.profile-card,
+.notifications-card,
+.donation-drives-card,
+.past-donations-card {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #d9d9d9;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.user-icon {
+  width: 73px;
+  height: 68px;
+}
+
+.section-icon {
+  width: 77px;
+  height: 77px;
+}
+
+.user-name {
+  color: #1d3557;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.section-title {
+  color: #1d3557;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Profile details */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blood-group,
+.eligibility-status,
+.next-eligible {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Notification list */
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification-item {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Event list */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-item {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Donation info */
+.donation-info {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Case list */
+.case-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.case-item {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Inbox styles */
+.inbox-container {
+  width: 316px;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: #b4b4b4;
+}
+
+.inbox-title {
+  color: #1d3557;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #d9d9d9;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style-type: none;
+}
+
+.user-item {
+  padding: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Footer styles */
+.main-footer {
+  padding: 40px 100px;
+  color: #fff;
+  background-color: #1d3557;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.company-info,
+.quick-links,
+.support-links {
+  max-width: 300px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.company-description {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.footer-heading {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  display: block;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Accessibility focus styles */
+a:focus,
+button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .main-content {
+    flex-direction: column;
   }
-  
-  /* Dashboard Header */
-  .dashboard-header {
-    border-radius: 16px;
-    background-color: rgba(217, 217, 217, 1);
-    display: flex;
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inbox-container {
     width: 100%;
-    padding: 19px 28px;
-    align-items: stretch;
-    gap: 20px;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
   }
-  
-  .brand-name {
-    margin: auto 0;
-    color: rgba(29, 53, 87, 1);
-    font-size: 28px;
-    padding: 0 1px 10px;
+}
+
+@media (max-width: 640px) {
+  .main-header {
+    padding: 0 10px;
   }
-  
-  .profile-btn {
-    border-radius: 12px;
-    background-color: rgba(29, 53, 87, 1);
-    padding: 0 18px;
-    color: rgba(248, 249, 250, 1);
-    border: none;
-    font-size: 28px;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  
-  /* Main Content */
-  .dashboard-main {
-    margin-top: 12px;
-    padding: 0 13px;
-  }
-  
-  .dashboard-content {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .content-primary {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    gap: 40px 30px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 78%;
-  }
-  
-  /* User Card */
-  .user-card {
-    border-radius: 20px;
-    background-color: rgba(217, 217, 217, 1);
-    min-width: 240px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 336px;
-  }
-  
-  .user-card__content {
-    padding: 67px 34px 67px 23px;
-  }
-  
-  .user-card__header {
-    display: flex;
-    align-items: center;
-    gap: 29px;
-  }
-  
-  .user-card__avatar {
-    width: 51px;
-    aspect-ratio: 0.91;
-    object-fit: contain;
-  }
-  
-  .user-card__name {
-    color: rgba(29, 53, 87, 1);
+
+  .profile-title {
     font-size: 20px;
-    margin: auto 0;
   }
-  
-  .user-card__detail {
-    color: rgba(255, 255, 255, 1);
-    font-size: 16px;
-    margin: 24px 0 0 15px;
+
+  .main-content {
+    padding: 10px;
   }
-  
-  /* Notifications Card */
-  .notifications-card {
-    border-radius: 20px;
-    background-color: rgba(217, 217, 217, 1);
-    min-width: 240px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 329px;
+
+  .main-footer {
+    padding: 20px;
   }
-  
-  .notifications-card__content {
-    padding: 24px 30px 88px;
-  }
-  
-  .notifications-card__header {
-    display: flex;
-    align-items: center;
-  }
-  
-  .notifications-card__icon {
-    width: 102px;
-    aspect-ratio: 0.9;
-    object-fit: contain;
-  }
-  
-  .notifications-card__title {
-    color: rgba(29, 53, 87, 1);
-    font-size: 20px;
-    margin: auto 0;
-  }
-  
-  .notifications-card__message {
-    color: rgba(255, 255, 255, 1);
-    font-size: 14px;
-    margin-top: 13px;
-  }
-  
-  /* Events Card */
-  .events-card {
-    border-radius: 20px;
-    background-color: rgba(217, 217, 217, 1);
-    min-width: 240px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 334px;
-  }
-  
-  .events-card__content {
-    padding: 34px 33px 34px 16px;
-  }
-  
-  .events-card__header {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-  }
-  
-  .events-card__icon {
-    width: 89px;
-    aspect-ratio: 1;
-    object-fit: contain;
-  }
-  
-  .events-card__title {
-    color: rgba(29, 53, 87, 1);
-    font-size: 20px;
-    margin: auto 0;
-    width: 279px;
-  }
-  
-  .events-card__subtitle {
-    color: rgba(255, 255, 255, 1);
-    font-size: 16px;
-    margin-top: 13px;
-  }
-  
-  .events-list {
-    list-style: none;
-    padding: 0;
-    margin: 14px 0 0;
-    min-height: 130px;
-    font-size: 33px;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 700;
-  }
-  
-  .events-list__item {
-    background-color: rgba(255, 255, 255, 1);
-    padding: 5px 33px;
-    margin-top: 25px;
-  }
-  
-  /* History Card */
-  .history-card {
-    border-radius: 20px;
-    background-color: rgba(217, 217, 217, 1);
-    min-width: 240px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 333px;
-  }
-  
-  .history-card__content {
-    padding: 33px 33px 0 16px;
-  }
-  
-  .history-card__header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .history-card__icon {
-    width: 89px;
-    aspect-ratio: 1;
-    object-fit: contain;
-  }
-  
-  .history-card__title {
-    color: rgba(29, 53, 87, 1);
-    font-size: 20px;
-    margin: auto 0;
-  }
-  
-  .history-card__detail {
-    color: rgba(255, 255, 255, 1);
-    font-size: 16px;
-    margin-top: 13px;
-  }
-  
-  .donations-list {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0 0;
-    min-height: 130px;
-    font-size: 28px;
-    color: rgba(0, 0, 0, 1);
-  }
-  
-  .donations-list__item {
-    text-align: center;
-  }
-  
-  /* Chat Sidebar */
-  .chat-sidebar {
-    width: 22%;
-    margin-left: 20px;
-  }
-  
-  .chat-container {
-    border-radius: 16px;
-    background-color: rgba(180, 180, 180, 1);
-    padding: 20px 11px 63px;
-  }
-  
-  .chat-title {
-    border-radius: 16px;
-    background-color: rgba(217, 217, 217, 1);
-    margin: 0 21px;
-    padding: 15px 63px 35px;
-    font-size: 20px;
-    color: rgba(29, 53, 87, 1);
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  .chat-list {
-    list-style: none;
-    padding: 0;
-    margin: 43px 0 0;
-    border-radius: 16px;
-    min-height: 392px;
-  }
-  
-  .chat-list__item {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 0 23px;
-    margin-top: 6px;
-    font-size: 33px;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 700;
-    width: 228px;
-    max-width: 100%;
-  }
-  
-  /* Footer */
-  .dashboard-footer {
-    border-radius: 16px;
-    background-color: rgba(29, 53, 87, 1);
-    margin-top: 16px;
-    padding: 51px 70px;
-  }
-  
+
   .footer-content {
-    max-width: 931px;
+    flex-direction: column;
+    gap: 30px;
   }
-  
-  .footer-sections {
-    display: flex;
-    gap: 20px;
-  }
-  
-  /* Footer About Section */
-  .footer-about {
-    width: 52%;
-  }
-  
-  .footer-about__title {
-    color: rgba(248, 249, 250, 1);
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0;
-  }
-  
-  .footer-about__description {
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
-    margin-top: 19px;
-  }
-  
-  /* Footer Links Section */
-  .footer-links {
-    width: 23%;
-    margin-left: 20px;
-  }
-  
-  .footer-links__title {
-    color: rgba(255, 255, 255, 1);
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0;
-  }
-  
-  .footer-links__list {
-    list-style: none;
-    padding: 0;
-    margin: 23px 0 0;
-  }
-  
-  /* Footer Support Section */
-  .footer-support {
-    width: 24%;
-    margin-left: 20px;
-  }
-  
-  .footer-support__title {
-    color: rgba(255, 255, 255, 1);
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0;
-  }
-  
-  .footer-support__list {
-    list-style: none;
-    padding: 0;
-    margin: 23px 0 0;
-  }
-  
-  .footer-link {
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: none;
-    display: block;
-    margin-top: 11px;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 991px) {
-    .dashboard-header {
-      max-width: 100%;
-      padding: 19px 20px;
-    }
-  
-    .profile-btn {
-      padding: 0 20px;
-    }
-  
-    .dashboard-content {
-      flex-direction: column;
-    }
-  
-    .content-primary {
-      width: 100%;
-      margin-top: 40px;
-    }
-  
-    .chat-sidebar {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 40px;
-    }
-  
-    .chat-title {
-      margin: 0 10px;
-      padding: 15px 20px 35px;
-    }
-  
-    .dashboard-footer {
-      max-width: 100%;
-      padding: 51px 20px;
-    }
-  
-    .footer-sections {
-      flex-direction: column;
-    }
-  
-    .footer-about,
-    .footer-links,
-    .footer-support {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 40px;
-    }
-  }
-  
+}

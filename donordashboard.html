@@ -1,135 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donor Dashboard - BloodConnect</title>
-    <link rel="stylesheet" href="donordashboard.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloodConnect - Profile</title>
+  <link rel="stylesheet" href="donordashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="dashboard-header">
-        <h1 class="brand-name">BloodConnect</h1>
-        <button class="profile-btn">Profile</button>
+  <div class="page-container">
+    <header class="main-header">
+      <div class="logo-container">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/945ede536f9cd27e9628aa888eae4ba4fa393897" alt="BloodConnect" class="logo-image">
+      </div>
+      <h1 class="profile-title">Profile</h1>
     </header>
 
-    <main class="dashboard-main">
-        <div class="dashboard-content">
-            <div class="content-primary">
-                <article class="user-card">
-                    <div class="user-card__content">
-                        <div class="user-card__header">
-                            <img src="https://cdn.builder.io/api/v1/image/assets/07ebb80207bf4c509fe22928f0b70754/966c229596aa90c53c6e95f4d489590e296f6d67?placeholderIfAbsent=true"
-                                alt="User profile" class="user-card__avatar" />
-                            <h2 class="user-card__name">Alan j Albertch</h2>
-                        </div>
-                        <p class="user-card__detail">Blood Group: O+</p>
-                        <p class="user-card__detail">Eligibility Status: Yes/NO</p>
-                        <p class="user-card__detail">Next Eligible on [Date]</p>
-                    </div>
-                </article>
+    <main class="main-content">
+      <div class="content-grid">
+        <section class="profile-card">
+          <div class="profile-header">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b54972fcaa1f0253e4c18c2956bf6045ed2edaf" alt="User" class="user-icon">
+            <h2 class="user-name">Alan j Albertch</h2>
+          </div>
+          <div class="profile-details">
+            <p class="blood-group">Blood Group: O+</p>
+            <p class="eligibility-status">Eligibility Status: Yes/NO</p>
+            <p class="next-eligible">Next Eligible on [Date]</p>
+          </div>
+        </section>
 
-                <article class="notifications-card">
-                    <div class="notifications-card__content">
-                        <div class="notifications-card__header">
-                            <img src="https://cdn.builder.io/api/v1/image/assets/07ebb80207bf4c509fe22928f0b70754/a03890202b9aefb7a012cb3c9b304dc296f9b827?placeholderIfAbsent=true"
-                                alt="Notifications icon" class="notifications-card__icon" />
-                            <h2 class="notifications-card__title">Notifications</h2>
-                        </div>
-                        <p class="notifications-card__message">
-                            Urgent request for A+ blood at XYZ Hospital
-                        </p>
-                        <p class="notifications-card__message">
-                            You can donate again in 10 days
-                        </p>
-                        <p class="notifications-card__message">
-                            Alerts about donation drive events.
-                        </p>
-                    </div>
-                </article>
+        <section class="notifications-card">
+          <div class="section-header">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/126ee4325b1003bb9fff66d43bba78751870e0e0" alt="Notifications" class="section-icon">
+            <h2 class="section-title">Notifications</h2>
+          </div>
+          <div class="notification-list">
+            <p class="notification-item">Urgent request for A+ blood at XYZ Hospital</p>
+            <p class="notification-item">You can donate again in 10 days</p>
+            <p class="notification-item">Alerts about donation drive events.</p>
+          </div>
+        </section>
 
-                <article class="events-card">
-                    <div class="events-card__content">
-                        <div class="events-card__header">
-                            <img src="https://cdn.builder.io/api/v1/image/assets/07ebb80207bf4c509fe22928f0b70754/daf8c83e99eb998dfcd77552d3de481a960ffffd?placeholderIfAbsent=true"
-                                alt="Events icon" class="events-card__icon" />
-                            <h2 class="events-card__title">Upcoming Donation Drives</h2>
-                        </div>
-                        <h3 class="events-card__subtitle">Blood donation camps</h3>
-                        <ul class="events-list">
-                            <li class="events-list__item">Event 1</li>
-                            <li class="events-list__item">Event 1</li>
-                        </ul>
-                    </div>
-                </article>
+        <section class="donation-drives-card">
+          <div class="section-header">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0e9dc8891c4183bcad4438ebd99ffcc88421d98c" alt="Donation Drives" class="section-icon">
+            <h2 class="section-title">Upcoming Donation Drives</h2>
+          </div>
+          <p>Blood donation camps</p>
+          <div class="event-list">
+            <p class="event-item">Event 1</p>
+            <p class="event-item">Event 1</p>
+          </div>
+        </section>
 
-                <article class="history-card">
-                    <div class="history-card__content">
-                        <div class="history-card__header">
-                            <img src="https://cdn.builder.io/api/v1/image/assets/07ebb80207bf4c509fe22928f0b70754/830f53527bb423d32d4f67e79bf6faed4b5c7e74?placeholderIfAbsent=true"
-                                alt="History icon" class="history-card__icon" />
-                            <h2 class="history-card__title">Past Donations</h2>
-                        </div>
-                        <p class="history-card__detail">Next Eligible on [Date]</p>
-                        <p class="history-card__detail">Total Donations Made</p>
-                        <ul class="donations-list">
-                            <li class="donations-list__item">Case 1</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
+        <section class="past-donations-card">
+          <div class="section-header">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c3469b075517eb1cc28ef288a79efe53b846e9b" alt="Past Donations" class="section-icon">
+            <h2 class="section-title">Past Donations</h2>
+          </div>
+          <div>
+            <p class="donation-info">Next Eligible on [Date]</p>
+            <p class="donation-info">Total Donations Made</p>
+          </div>
+          <div class="case-list">
+            <p class="case-item">Case 1</p>
+            <p class="case-item">Case 1</p>
+            <p class="case-item">Case 1</p>
+          </div>
+        </section>
+      </div>
 
-            <aside class="chat-sidebar">
-                <div class="chat-container">
-                    <h2 class="chat-title">Inbox</h2>
-                    <ul class="chat-list">
-                        <li class="chat-list__item">User 1</li>
-                        <li class="chat-list__item">User 1</li>
-                        <li class="chat-list__item">User 1</li>
-                        <li class="chat-list__item">User 1</li>
-                        <li class="chat-list__item">User 1</li>
-                        <li class="chat-list__item">User 1</li>
-                        <li class="chat-list__item">User 1</li>
-                        <li class="chat-list__item"></li>
-                    </ul>
-                </div>
-            </aside>
-        </div>
+      <aside class="inbox-container">
+        <h2 class="inbox-title">Inbox</h2>
+        <ul class="user-list" role="list">
+          <li class="user-item">User 1</li>
+          <li class="user-item">User 1</li>
+          <li class="user-item">User 1</li>
+          <li class="user-item">User 1</li>
+          <li class="user-item">User 1</li>
+          <li class="user-item">User 1</li>
+          <li class="user-item">User 1</li>
+          <li class="user-item">User 1</li>
+        </ul>
+      </aside>
     </main>
 
-    <footer class="dashboard-footer">
-        <div class="footer-content">
-            <div class="footer-sections">
-                <section class="footer-about">
-                    <h2 class="footer-about__title">BloodConnect</h2>
-                    <p class="footer-about__description">
-                        BloodLink is a platform connecting donors and recipients to save
-                        lives.
-                    </p>
-                </section>
-
-                <nav class="footer-links">
-                    <h2 class="footer-links__title">Quick Links</h2>
-                    <ul class="footer-links__list">
-                        <li><a href="#" class="footer-link">Home</a></li>
-                        <li><a href="#" class="footer-link">About Us</a></li>
-                        <li><a href="#" class="footer-link">Find Donors</a></li>
-                        <li><a href="#" class="footer-link">Contact Us</a></li>
-                    </ul>
-                </nav>
-
-                <section class="footer-support">
-                    <h2 class="footer-support__title">Support</h2>
-                    <ul class="footer-support__list">
-                        <li><a href="#" class="footer-link">FAQ's</a></li>
-                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="#" class="footer-link">Terms of Service</a></li>
-                    </ul>
-                </section>
-            </div>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="company-info">
+          <div class="footer-logo">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/96262ff0d8b8820a5b46d87f2ef3395b2f736273" alt="BloodConnect" class="logo-image">
+          </div>
+          <p class="company-description">BloodConnect is a platform connecting donors and recipients to save lives.</p>
         </div>
-    </footer>
-</body>
 
+        <nav class="quick-links" aria-label="Quick links">
+          <h3 class="footer-heading">Quick Links</h3>
+          <a href="#" class="footer-link">Home</a>
+          <a href="#" class="footer-link">About Us</a>
+          <a href="#" class="footer-link">Find Donors</a>
+          <a href="#" class="footer-link">Contact Us</a>
+        </nav>
+
+        <div class="support-links">
+          <h3 class="footer-heading">Support</h3>
+          <a href="#" class="footer-link">FAQ's</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>

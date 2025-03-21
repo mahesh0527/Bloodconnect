@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donor Registration - BloodConnect</title>
+    <link rel="stylesheet" href="DonorRegisteration.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@400;600;700&family=Crimson+Text:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="header">
+        <div class="header-container">
+          <div class="logo-container">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/299928fbd90a216c10278887e04371daa5b70305"
+              alt="BloodConnect Logo"
+              class="logo-img"
+            />
+          </div>
+          <div class="profile-button">Profile</div>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="registration-section">
+          <h1 class="registration-title">Donor Registration</h1>
+          <form class="registration-form">
+            <div class="form-group">
+              <label class="form-label" for="fullName">Full Name</label>
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="Enter your name here"
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phoneNumber">Phone Number</label>
+              <div class="input-container">
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  placeholder="Enter your phone number"
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <div class="input-container">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email id"
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="weight">Weight</label>
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="weight"
+                  placeholder="Enter your weight"
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Last Blood Donation Date</label>
+              <div class="date-picker">
+                <i class="ti ti-calendar"></i>
+                <div>Choose date</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Health Questions</label>
+              <div class="checkbox-group">
+                <div class="checkbox-item">
+                  <input type="checkbox" id="q1" class="checkbox-input" />
+                  <label for="q1">question 1</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="q2" class="checkbox-input" />
+                  <label for="q2">question 2</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="q3" class="checkbox-input" />
+                  <label for="q3">question 3</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b8ec5bb02232f6b4d0af6276e3142f20132f0d1"
+                alt="BloodConnect Logo"
+                class="footer-logo-img"
+              />
+            </div>
+            <p class="footer-description">
+              BloodConnect is a platform connecting donors and recipients to
+              save lives.
+            </p>
+          </div>
+          <div class="footer-links-container">
+            <nav class="footer-links">
+              <h2 class="footer-links-title">Quick Links</h2>
+              <a href="#" class="footer-link">Home</a>
+              <a href="#" class="footer-link">About Us</a>
+              <a href="#" class="footer-link">Find Donors</a>
+              <a href="#" class="footer-link">Contact Us</a>
+            </nav>
+            <nav class="footer-links">
+              <h2 class="footer-links-title">Support</h2>
+              <a href="#" class="footer-link">FAQ's</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="#" class="footer-link">Terms of Service</a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
