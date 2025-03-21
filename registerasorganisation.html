@@ -1,176 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BloodConnect - Registration</title>
-    <link rel="stylesheet" href="registerasorganisation.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    
-  </head>
-  <body>
-    <nav class="nav-container">
-      <h1 class="logo"><img src="WhatsApp Image 2025-03-20 at 22.16.05_5a0446c7.jpg" alt="logo"></h1>
-      <div class="nav-links">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Contact</a>
-        <a href="#" class="nav-link">Donor</a>
-      </div>
-      <button class="login-btn">Login</button>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Organization - BloodConnect</title>
+    <link rel="stylesheet" href="registerasorganisation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@500&family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <main class="main-content">
-      <section class="registration-section">
-        <h2 class="registration-title">Create your Account</h2>
+    <main class="registration-container">
         <form class="registration-form">
-          <div class="form-group">
-            <input
-              type="text"
-              placeholder="Institution Name"
-              class="form-input"
-              aria-label="Institution Name"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              placeholder="Registration Number"
-              class="form-input"
-              aria-label="Registration Number"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="email"
-              placeholder="Email Address"
-              class="form-input"
-              aria-label="Email Address"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              class="form-input"
-              aria-label="Phone Number"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              placeholder="Location"
-              class="form-input"
-              aria-label="Location"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              placeholder="Address"
-              class="form-input"
-              aria-label="Address"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              placeholder="City"
-              class="form-input"
-              aria-label="City"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              placeholder="Pincode"
-              class="form-input"
-              aria-label="Pincode"
-            />
-          </div>
-          <div class="form-group">
-            <label class="org-type-label">Type of Organization</label>
-            <select
-              class="org-type-select"
-              disabled
-              aria-label="Type of Organization"
-            >
-              <option>Select</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              class="form-input"
-              aria-label="Alternative Phone Number"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="password"
-              placeholder="Set Password"
-              class="form-input"
-              aria-label="Set Password"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="password"
-              placeholder="Confirm Password"
-              class="form-input"
-              aria-label="Confirm Password"
-            />
-          </div>
-          <div class="terms-group">
-            <input
-              type="checkbox"
-              id="terms"
-              class="terms-checkbox"
-              aria-label="Accept Terms and Conditions"
-            />
-            <label for="terms" class="terms-label">Terms and Conditions</label>
-          </div>
-          <div class="login-text">
-            <span>Already have an account?</span>
-            <div class="login-link">
-              <span>Login</span>
-              <span>as an Organization</span>
+            <h1 class="form-title">Create your Account</h1>
+
+            <div class="form-fields">
+                <input type="text" placeholder="Institution Name" class="form-input" required>
+                <input type="text" placeholder="Registration Number" class="form-input" required>
+                <input type="email" placeholder="Email Address" class="form-input" required>
+                <input type="tel" placeholder="Phone Number" class="form-input" required>
+                <input type="text" placeholder="Location" class="form-input" required>
+                <input type="text" placeholder="Address" class="form-input" required>
+                <input type="text" placeholder="City" class="form-input" required>
+                <input type="text" placeholder="Pincode" class="form-input" required>
+
+                <div class="org-type-container">
+                    <label class="org-type-label">Type of Organization</label>
+                    <select class="org-type-select" required>
+                        <option value="">Select</option>
+                        <option value="hospital">Hospital</option>
+                        <option value="blood-bank">Blood Bank</option>
+                        <option value="ngo">NGO</option>
+                    </select>
+                </div>
+
+                <input type="password" placeholder="Set Password" class="form-input" required>
+                <input type="password" placeholder="Confirm Password" class="form-input" required>
             </div>
-          </div>
-          <button type="submit" class="register-btn">Register</button>
+
+            <div class="terms-container">
+                <input type="checkbox" id="terms" class="terms-checkbox" required>
+                <label for="terms" class="terms-label">I agree to the Terms and Conditions</label>
+            </div>
+
+            <p class="login-text">Already have an account?</p>
+            <div class="login-link-container">
+                <a href="#" class="login-link">Login</a>
+                <span class="login-suffix">as an Organization</span>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
         </form>
-      </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-info">
-          <h2 class="footer-logo">BloodConnect</h2>
-          <p class="footer-description">
-            BloodLink is a platform connecting donors and recipients to save
-            lives.
-          </p>
-        </div>
-        <div class="footer-links-container">
-          <nav class="quick-links">
-            <h3 class="footer-heading">Quick Links</h3>
-            <a href="#" class="footer-link">Home</a>
-            <a href="#" class="footer-link">About Us</a>
-            <a href="#" class="footer-link">Find Donors</a>
-            <a href="#" class="footer-link">Contact Us</a>
-          </nav>
-          <nav class="support-links">
-            <h3 class="footer-heading">Support</h3>
-            <a href="#" class="footer-link">FAQ's</a>
-            <a href="#" class="footer-link">Privacy Policy</a>
-            <a href="#" class="footer-link">Terms of Service</a>
-          </nav>
-        </div>
-      </div>
-    </footer>
-  </body>
+</body>
 </html>
