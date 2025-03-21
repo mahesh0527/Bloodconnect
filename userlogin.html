@@ -6,74 +6,82 @@
     <title>BloodConnect - Login</title>
     <link rel="stylesheet" href="userlogin.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@500&family=Crimson+Text:ital,wght@1,600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="nav-container">
-      <h1 class="logo"><img src="WhatsApp_Image_2025-03-20_at_22.16.05_5a0446c7-removebg-preview.png" alt="logo"></h1>
-      <nav class="nav-links">
-        <a href="#" class="nav-item">Home</a>
-        <a href="#" class="nav-item">About</a>
-        <a href="#" class="nav-item">Contact</a>
-        <a href="#" class="nav-item">Donor</a>
-      </nav>
-      <button class="login-button">Login</button>
-    </header>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <div class="logo-wrapper">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/299928fbd90a216c10278887e04371daa5b70305"
+            alt="BloodConnect Logo"
+            class="header-logo"
+          />
+        </div>
+        <div class="auth-button">Login / Sign up</div>
+      </header>
 
-    <main class="login-section">
-      <section class="login-form-container">
-        <h2 class="login-title">Login to your account</h2>
-        <form class="login-form">
-          <div class="form-group">
-            <input type="text" class="form-input" placeholder="Email / Phone" />
-          </div>
-          <div class="form-group">
-            <input type="password" class="form-input" placeholder="Password" />
-          </div>
-          <div class="form-actions">
-            <p class="signup-prompt">
-              Don't have an account?
-              <a href="#" class="signup-link">Sign Up</a>
+      <main class="main-content">
+        <section class="login-section">
+          <h1 class="login-title">Login to your account</h1>
+          <form class="login-form">
+            <div class="form-fields">
+              <input
+                type="text"
+                placeholder="Email / Phone"
+                class="form-input"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="form-input"
+              />
+            </div>
+            <div class="form-links">
+              <div class="signup-text">
+                <span>Don't have an account?</span>
+                <a href="#" class="signup-link">Sign Up</a>
+              </div>
+              <div class="org-login">Login as an organisation</div>
+              <a href="#" class="forgot-password">Forget Password?</a>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b8ec5bb02232f6b4d0af6276e3142f20132f0d1"
+              alt="BloodConnect Logo"
+              class="footer-logo"
+            />
+            <p class="footer-description">
+              BloodConnect is a platform connecting donors and recipients to
+              save lives.
             </p>
-            <p class="org-login">Login as an organisation</p>
-            <a href="#" class="forgot-password">Forget Password?</a>
           </div>
-          <button type="submit" class="submit-button">Submit</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <section class="footer-brand">
-          <h3 class="footer-title">BloodConnect</h3>
-          <p class="footer-description">
-            BloodLink is a platform connecting donors and recipients to save
-            lives.
-          </p>
-        </section>
-
-        <section class="quick-links">
-          <h3 class="footer-title">Quick Links</h3>
-          <nav class="footer-nav">
-            <a href="#" class="footer-link">Home</a>
-            <a href="#" class="footer-link">About Us</a>
-            <a href="#" class="footer-link">Find Donors</a>
-            <a href="#" class="footer-link">Contact Us</a>
-          </nav>
-        </section>
-
-        <section class="support-links">
-          <h3 class="footer-title">Support</h3>
-          <nav class="footer-nav">
-            <a href="#" class="footer-link">FAQ's</a>
-            <a href="#" class="footer-link">Privacy Policy</a>
-            <a href="#" class="footer-link">Terms of Service</a>
-          </nav>
-        </section>
-      </div>
-    </footer>
+          <div class="footer-links">
+            <nav class="quick-links">
+              <h2 class="footer-heading">Quick Links</h2>
+              <a href="#" class="footer-link">Home</a>
+              <a href="#" class="footer-link">About Us</a>
+              <a href="#" class="footer-link">Find Donors</a>
+              <a href="#" class="footer-link">Contact Us</a>
+            </nav>
+            <nav class="support-links">
+              <h2 class="footer-heading">Support</h2>
+              <a href="#" class="footer-link">FAQ's</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="#" class="footer-link">Terms of Service</a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

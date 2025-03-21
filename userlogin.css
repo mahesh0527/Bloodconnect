@@ -1,154 +1,155 @@
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
+/* Page Layout */
+.page-wrapper {
+  max-width: none;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
 }
 
-.nav-container {
+/* Header Styles */
+.site-header {
   display: flex;
-  margin-bottom: 10px;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  height: 60px;
+  align-items: center;
+  padding: 19px 18px;
+  height: 80px;
   background-color: #d9d9d9;
 }
 
-.nav-container img{
-  width: auto;
-  height: 45px;
+.logo-wrapper {
+  width: 250px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.brand-name {
+.header-logo {
+  width: 157px;
+  height: 36px;
+}
+
+.auth-button {
+  color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: 700;
-  color: #1d3557;
-  letter-spacing: 0.5px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 50px;
-
-}
-
-.nav-item {
-  font-size: 18px;
-  font-weight: 500;
-  color: #1d3557;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.login-button {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #f8f9fa;
-  padding: 6px 10px;
+  padding: 0 25px;
+  height: 42px;
   border-radius: 12px;
-  cursor: pointer;
   background-color: #1d3557;
-  border: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin: 42px auto;
+  width: 1200px;
+  border-radius: 16px;
+  padding: 86px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d9;
 }
 
 .login-section {
+  width: 456px;
   display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-.login-form-container {
-  width: 635px;
-  border-radius: 14px;
-  padding: 38px 23px;
-  background-color: #d9d9d9;
+  flex-direction: column;
+  gap: 19px;
 }
 
 .login-title {
   font-family: "Inter", sans-serif;
-  font-size: 28px;
-  font-weight: 00;
-  margin-bottom: 68px;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
-.form-group {
-  margin-bottom: 20px;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
 }
 
 .form-input {
   width: 100%;
-  height: 65px;
-  border: none;
+  height: 41px;
   border-radius: 16px;
-  padding: 0 20px;
+  border: none;
+  padding: 11px;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.3);
-  background-color: #fff;
-  }
-
-.form-actions {
-  margin: 20px 0;
-  text-align: right;
 }
 
-.signup-prompt {
-  font-size: 16px;
+.form-links {
+  display: flex;
+  flex-direction: column;
+  margin: 19px 0;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
   font-style: italic;
-  margin: 10px 0;
+  font-size: 16px;
+}
+
+.signup-text {
+  color: #000;
 }
 
 .signup-link {
   color: #1d3557;
-  cursor: pointer;
   text-decoration: none;
 }
 
 .org-login {
-  font-size: 14px;
-  font-style: italic;
-  margin: 10px 0;
+  color: #000;
 }
 
 .forgot-password {
-  display: block;
-  font-size: 14px;
-  font-style: italic;
-  margin: 10px 0;
   color: #1d3557;
-  cursor: pointer;
   text-decoration: none;
 }
 
-.submit-button {
+.submit-btn {
   width: 100%;
-  height: 50px;
+  height: 41px;
+  color: #f9f9f9;
   border: none;
   border-radius: 16px;
-  color: #f9f9f9;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   cursor: pointer;
   background-color: #1d3557;
 }
 
-.footer {
-  padding: 48px 96px;
-  border-radius: 16px;
-  color: #fff;
+/* Footer Styles */
+.site-footer {
+  padding: 66px 132px;
   background-color: #1d3557;
+  margin-top: auto;
 }
 
-.footer-content {
+.footer-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1048px;
+  max-width: 1248px;
   margin: 0 auto;
 }
 
@@ -156,101 +157,91 @@ body {
   max-width: 426px;
 }
 
-.footer-title {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 24px;
+.footer-logo {
+  width: 157px;
+  height: 36px;
+  margin-bottom: 8px;
 }
 
 .footer-description {
-  font-size: 14px;
-  line-height: 1.5;
+  color: #fff;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  gap: 100px;
 }
 
 .quick-links,
 .support-links {
-  max-width: 426px;
-}
-
-.footer-nav {
   display: flex;
   flex-direction: column;
+  gap: 13px;
+}
+
+.footer-heading {
+  color: #fff;
+  font-family: "Crimson Text", serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 27px;
 }
 
 .footer-link {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  margin: 15px 0;
-  cursor: pointer;
   color: #fff;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
   text-decoration: none;
 }
 
 /* Responsive Styles */
 @media (max-width: 991px) {
-  .nav-links {
-    display: none;
+  .page-wrapper {
+    max-width: 991px;
   }
 
-  .footer-content {
-    flex-direction: column;
-    gap: 20px;
+  .main-content {
+    width: 90%;
+    margin: 20px auto;
   }
 
-  .login-form-container {
-    width: 70%;
-    max-width: 635px;
+  .site-footer {
+    padding: 40px 20px;
   }
 }
 
 @media (max-width: 640px) {
-  .nav-container {
-    padding: 0 10px;
+  .page-wrapper {
+    max-width: 640px;
   }
 
-  .brand-name {
-    font-size: 24px;
+  .site-header {
+    padding: 10px;
   }
 
-  .login-button {
-    font-size: 24px;
-    padding: 4px 16px;
+  .auth-button {
+    font-size: 20px;
+    padding: 0 15px;
   }
 
-  .login-form-container {
-    padding: 30px 20px;
+  .login-section {
+    width: 90%;
   }
 
-  .login-title {
-    font-size: 32px;
-    margin-bottom: 40px;
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
   }
 
-  .form-input {
-    height: 70px;
-    font-size: 24px;
-  }
-
-  .submit-button {
-    height: 70px;
-    font-size: 24px;
-  }
-
-  .footer {
-    padding: 30px 20px;
-  }
-
-  .footer-title {
-    font-size: 24px;
-  }
-
-  .footer-description {
-    font-size: 16px;
-  }
-
-  .footer-link {
-    font-size: 16px;
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
   }
 }

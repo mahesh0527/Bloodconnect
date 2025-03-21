@@ -1,187 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Page</title>
-    <link rel="stylesheet" href="usersignup.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    
-  </head>
-  <body>
-    <header class="header">
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/72da705f420a999528562e3011a57d4aa5408293"
-        alt="BloodLink Logo"
-        class="header-logo"
-      />
-      <button class="login-button">Login</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodConnect - Create Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/299928fbd90a216c10278887e04371daa5b70305" alt="BloodConnect Logo" class="logo">
+            </div>
+            <div class="auth-button-wrapper">
+                <button class="auth-button">Login / Sign up</button>
+            </div>
+        </div>
     </header>
 
     <main class="main-content">
-      <section class="registration-container">
-        <div class="registration-form-wrapper">
-          <h1 class="form-title">Create your Account</h1>
+        <section class="registration-section">
+            <div class="registration-container">
+                <div class="registration-form-wrapper">
+                    <h1 class="registration-title">Create your Account</h1>
+                    <form class="registration-form">
+                        <div class="form-field">
+                            <input type="text" placeholder="Full Name" class="input-field" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" placeholder="Email" class="input-field" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="tel" placeholder="Phone Number" class="input-field" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="date" placeholder="D.O.B" class="input-field" required>
+                        </div>
 
-          <form class="registration-form">
-            <div class="form-field">
-              <input
-                type="text"
-                placeholder="Full Name"
-                class="input-field"
-                required
-              />
+                        <div class="form-field-group">
+                            <label class="field-label">Gender :</label>
+                            <select class="select-field" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field-group">
+                            <label class="field-label">Blood Group:</label>
+                            <select class="select-field select-field-large" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <input type="text" placeholder="Address" class="input-field" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" placeholder="City" class="input-field" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" placeholder="State" class="input-field" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" placeholder="Pin" class="input-field" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="password" placeholder="Password" class="input-field" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="password" placeholder="Confirm Password" class="input-field" required>
+                        </div>
+
+                        <div class="terms-checkbox">
+                            <input type="checkbox" id="terms" class="checkbox-input" required>
+                            <label for="terms" class="checkbox-label">Terms and Conditions</label>
+                        </div>
+
+                        <div class="form-links">
+                            <p class="register-org">
+                                <span class="highlight">Register</span>
+                                <span>as an Organisation</span>
+                            </p>
+                            <p class="login-link">
+                                <span>Already a User?</span>
+                                <span class="highlight">Login</span>
+                            </p>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
             </div>
-
-            <div class="form-field">
-              <input
-                type="email"
-                placeholder="Email"
-                class="input-field"
-                required
-              />
-            </div>
-
-            <div class="form-field">
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                class="input-field"
-                required
-              />
-            </div>
-
-            <div class="form-field">
-              <input
-                type="date"
-                placeholder="D.O.B"
-                class="input-field"
-                required
-              />
-            </div>
-
-            <div class="select-group">
-              <select class="select-field" required>
-                <option value="" disabled selected>Select</option>
-              </select>
-              <select class="select-field" required>
-                <option value="" disabled selected>Select</option>
-              </select>
-            </div>
-
-            <div class="form-field">
-              <input
-                type="text"
-                placeholder="Address"
-                class="input-field"
-                required
-              />
-            </div>
-
-            <div class="form-field">
-              <input
-                type="text"
-                placeholder="City"
-                class="input-field"
-                required
-              />
-            </div>
-
-            <div class="form-field">
-              <input
-                type="text"
-                placeholder="State"
-                class="input-field"
-                required
-              />
-            </div>
-
-            <div class="form-field">
-              <input
-                type="text"
-                placeholder="Pin"
-                class="input-field"
-                required
-              />
-            </div>
-
-            <div class="form-field">
-              <input
-                type="password"
-                placeholder="Password"
-                class="input-field"
-                required
-              />
-            </div>
-
-            <div class="form-field">
-              <input
-                type="password"
-                placeholder="Confirm Password"
-                class="input-field"
-                required
-              />
-            </div>
-
-            <div class="terms-container">
-              <input type="checkbox" class="checkbox-input" required />
-              <label class="terms-text">Terms and Conditions</label>
-            </div>
-
-            <div class="register-org">
-              <span class="register-text">Register</span>
-              <span class="org-text">as an Organisation</span>
-            </div>
-
-            <div class="login-prompt">
-              <span class="prompt-text">Already a User?</span>
-              <span class="login-link">Login</span>
-            </div>
-
-            <button type="submit" class="submit-button">Submit</button>
-          </form>
-        </div>
-      </section>
+        </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-info">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1d32cc9faba97df2c292691a596b2137eb865db"
-            alt="BloodLink Logo"
-            class="footer-logo"
-          />
-          <p class="footer-description">
-            BloodLink is a platform connecting donors and recipients to save
-            lives.
-          </p>
-        </div>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo-wrapper">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ddf1b7c2949dcac7c69f34996558544b8d47b86" alt="BloodConnect Logo" class="footer-logo">
+                </div>
+                <p class="footer-description">
+                    BloodConnect is a platform connecting donors and recipients to save lives.
+                </p>
+            </div>
 
-        <div class="footer-links">
-          <nav class="quick-links">
-            <h2 class="footer-heading">Quick Links</h2>
-            <ul class="footer-list">
-              <li><a href="#" class="footer-link">Home</a></li>
-              <li><a href="#" class="footer-link">About Us</a></li>
-              <li><a href="#" class="footer-link">Find Donors</a></li>
-              <li><a href="#" class="footer-link">Contact Us</a></li>
-            </ul>
-          </nav>
+            <nav class="footer-nav">
+                <h2 class="footer-nav-title">Quick Links</h2>
+                <ul class="footer-nav-list">
+                    <li><a href="#" class="footer-link">Home</a></li>
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Find Donors</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                </ul>
+            </nav>
 
-          <nav class="support-links">
-            <h2 class="footer-heading">Support</h2>
-            <ul class="footer-list">
-              <li><a href="#" class="footer-link">FAQ's</a></li>
-              <li><a href="#" class="footer-link">Privacy Policy</a></li>
-              <li><a href="#" class="footer-link">Terms of Service</a></li>
-            </ul>
-          </nav>
+            <nav class="footer-support">
+                <h2 class="footer-nav-title">Support</h2>
+                <ul class="footer-nav-list">
+                    <li><a href="#" class="footer-link">FAQ's</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
     </footer>
-  </body>
+</body>
 </html>
